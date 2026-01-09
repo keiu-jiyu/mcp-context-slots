@@ -1,8 +1,4 @@
-
----
-
 ### 建议的仓库文件结构
-在上传之前，建议您按以下结构组织文件（文件名与之前的代码示例对应）：
 
 ```text
 .
@@ -19,10 +15,6 @@
 └── requirements.txt            # (可选) 依赖文件
 ```
 
----
-
-
-```markdown
 # MCP Context Slot Architecture 🧩
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Architecture](https://img.shields.io/badge/Architecture-MCP%20%7C%20A2A-green) ![Status](https://img.shields.io/badge/Status-Reference-orange)
@@ -42,7 +34,6 @@
 
 系统数据流转如下所示：
 
-```mermaid
 graph TD
     UserInput[用户输入] --> RawSlot(原始 Slot)
     DB[向量库/FAQ] --> RAGSlot(检索 Slot)
@@ -59,7 +50,6 @@ graph TD
     Compression & Pruning --> FinalSlots(结构化 Slot 列表)
     FinalSlots --> Injection[Injection 渲染层]
     Injection --> LLM[LLM / Model API]
-```
 
 ## 📂 文件说明
 
