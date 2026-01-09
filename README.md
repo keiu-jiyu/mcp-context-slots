@@ -1,3 +1,27 @@
+
+---
+
+### 建议的仓库文件结构
+在上传之前，建议您按以下结构组织文件（文件名与之前的代码示例对应）：
+
+```text
+.
+├── README.md                   # 本文件
+├── complete_mcp_system.py      # 【核心】完整整合版 Demo
+├── examples/                   # 分步示例文件夹
+│   ├── mcp_slot_demo.py                # 例2-1: 基础定义
+│   ├── slot_compression_vs_retrieval.py # 例2-2: 压缩与RAG
+│   ├── slot_chain_rebuild.py           # 例2-3: 链式重构
+│   ├── context_block_partition.py      # 例2-4: 上下文分块
+│   ├── slot_merge_operator.py          # 例2-5: 融合算子
+│   ├── context_injection_demo.py       # 例2-6: Prompt注入
+│   └── compress_semantic_group_demo.py # 例2-7: 语义分组
+└── requirements.txt            # (可选) 依赖文件
+```
+
+---
+
+
 ```markdown
 # MCP Context Slot Architecture 🧩
 
